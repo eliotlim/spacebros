@@ -1,8 +1,10 @@
 #include "clarvi.h"
+#include "lwcgl.h"
 
 int main(void) {
 
-    while (1) {
+    // Count to 5 seconds
+    while (wait() <= 5000) {
         unsigned int time_cs = div(get_ms(), 10);
         debug_print(time_cs);
 
