@@ -1,10 +1,14 @@
 #include "clarvi.h"
 #include "lwcgl.h"
 
-int main(void) {
+extern int game_main(void);
+
+int main(void)
+{
 
     // Count to 5 seconds
-    while (wait() <= 5000) {
+    while (wait() <= 5000)
+    {
         unsigned int time_cs = div(get_ms(), 10);
         debug_print(time_cs);
 
@@ -22,6 +26,5 @@ int main(void) {
         hex_output(timeBCD);
     }
 
-    return 0;
+    return game_main();
 }
-
