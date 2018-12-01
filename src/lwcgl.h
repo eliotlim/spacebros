@@ -20,6 +20,7 @@
 #define DISPLAY_HEIGHT 272
 
 void vid_set_pixel(int x, int y, int colour);
+void clear_screen(void);
 
 int wait(void);
 

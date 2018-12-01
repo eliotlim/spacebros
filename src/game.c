@@ -16,7 +16,6 @@ struct b_int y = {
 };
 
 void process_input();
-void clear_screen();
 
 int game_main(void)
 {
@@ -26,7 +25,7 @@ int game_main(void)
     {
 
         process_input();
-        
+
         if (x_prev != x.val || y_prev != y.val)
             vid_set_pixel(x.val, y.val, PIXEL_WHITE);
 
