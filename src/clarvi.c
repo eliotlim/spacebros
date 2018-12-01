@@ -14,3 +14,8 @@ int intToBCD(int a) {
     int a1 = rem(div(a, 10), 10);
     return a0 | (a1 << 4);
 }
+
+int get_ms(void) {
+    int time = *((int*) TIMER_MS);
+    return time;
+}

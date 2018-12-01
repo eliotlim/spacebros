@@ -3,7 +3,7 @@
 int main(void) {
 
     while (1) {
-        unsigned int time_cs = div(get_time(), TICKS_SEC / 100);
+        unsigned int time_cs = div(get_ms(), 10);
         debug_print(time_cs);
 
         int cs = intToBCD(rem(time_cs, 100));
